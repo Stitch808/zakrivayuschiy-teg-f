@@ -4,3 +4,56 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+    --akcent-color: #00CC14;
+    --background-color: #000;
+    --text-stroke-color: #000;
+    --title-font-weight: 785;
+    --font-weight: 465;
+    --normal-font-weight: 400;
+    --first-background-image: repeating-linear-gradient(#000, transparent 2px);
+    --second-background-image: repeating-linear-gradient(90deg, #000, transparent 2px);
+    --background-gradient: linear-gradient(#007f0c, #004306);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --akcent-color: #00CC14;
+        --background-color: #000;
+        --text-stroke-color: #000;
+        ---title-font-weight: 785;
+        --font-weight: 465;
+        --normal-font-weight: 400;
+        --first-background-image: repeating-linear-gradient(#000, transparent 2px);
+        --second-background-image: repeating-linear-gradient(90deg, #000, transparent 2px);
+        --background-gradient: linear-gradient(#007f0c, #004306);
+    }
+}
+
+:root.theme-light {
+    --akcent-color: #000;
+    --background-color: #FFF;
+    --text-stroke-color: #FFF;
+    --title-font-weight: 700;
+    --font-weight: 400;
+    --normal-font-weight: 400;
+    --first-background-image: repeating-linear-gradient(#d3d3d3, transparent 2px);
+    --second-background-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px);
+    --background-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --akcent-color: #000;
+        --background-color: #FFF; 
+        --text-stroke-color: #FFF;
+        --font-weight-main-card: 400;
+        --title-font-weight: 700;
+        --font-weight: 400;
+        --normal-font-weight: 400;
+        --first-background-image: repeating-linear-gradient(#d3d3d3, transparent 2px);
+        --second-background-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px);
+        --background-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    }
+}
