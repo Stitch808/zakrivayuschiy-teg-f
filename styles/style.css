@@ -414,36 +414,32 @@
   border: 2px solid var(--akcent-color);
 }
 
-.one__card-img {
-  filter: blur(1px);
+.image-filter-sepia {
+  filter: sepia(100%);
 }
 
-.two-card-img {
-  filter: contrast(50%);
+.image-filter-multiple {
+  filter: contrast(300%) saturate(0.3) hue-rotate(250deg) blur(1px);
 }
 
-.three-card-img {
-  filter: opacity(0.4);
+.image-filter-invert {
+  filter: invert(0.67);
 }
 
-.four-card-img {
-  filter: saturate(140%);
+.image-filter-saturate {
+  filter: saturate(800%);
 }
 
-.five-card-img {
-  filter: grayscale(0.9);
+.image-filter-grayscale {
+  filter: grayscale(1);
 }
 
-.six-card-img {
-  filter: hue-rotate(-100deg);
+.image-filter-blur {
+  filter: blur(3px);
 }
 
-.seven-card-img {
-  filter: sepia(70%);
-}
-
-.eight-card-img {
-  filter: invert(1) brightness(50%) hue-rotate(33deg);
+.image-filter-hue-rotate {
+  filter: hue-rotate(110deg);
 }
 
 @media (width <= 376px) {
