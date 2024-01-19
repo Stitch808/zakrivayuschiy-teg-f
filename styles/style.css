@@ -18,13 +18,11 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-family-main);
-  font-variation-settings: 'wght' var(--font-weight-head-card);
+  font-variation-settings: "wght" var(--font-weight-head-card);
   color: var(--akcent-color);
   background-color: var(--background-color);
-  background-image: 
-    var(--first-background-image), 
-    var(--second-background-image),
-    var(--background-gradient);
+  background-image: var(--first-background-image),
+    var(--second-background-image), var(--background-gradient);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,7 +78,6 @@
 .theme-menu__list {
   display: grid;
   gap: 8px;
-  
 }
 
 .theme-menu__button {
@@ -123,7 +120,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   transition: width 0.5s;
   background-color: var(--akcent-color);
@@ -135,12 +132,12 @@
   width: 100%;
 }
 
-
 .main {
+  display: grid;
   margin: 0 auto;
   max-width: clamp(371px, 100vw, 696px);
   font-family: var(--font-family-main);
-  gap: 49px;
+  gap: 50px;
 }
 
 .main__title-card {
@@ -155,12 +152,11 @@
   gap: 27px;
   font-size: 18px;
   font-weight: var(--font-weight);
-  line-height: 21px; 
+  line-height: 21px;
 }
 
 .main__card-img {
   inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   background-size: cover;
   position: relative;
@@ -186,22 +182,15 @@
   mix-blend-mode: hard-light;
   opacity: 0.5;
   font-size: 14px;
-  text-shadow: 
-    -1px 0 var(--text-stroke-color),
-    1px 0 var(--text-stroke-color),
-    0 1px var(--text-stroke-color),
-    0 -1px var(--text-stroke-color);
+  text-shadow: -1px 0 var(--text-stroke-color), 1px 0 var(--text-stroke-color),
+    0 1px var(--text-stroke-color), 0 -1px var(--text-stroke-color);
 }
 
 @supports (-webkit-text-stroke: 1px var(--text-stroke-color)) {
   .label {
-      -webkit-text-stroke: 1px var(--text-stroke-color);
-      text-shadow: none;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-shadow: none;
   }
-}
-
-.button {
-
 }
 
 .main__button-card {
@@ -349,12 +338,12 @@
   max-width: clamp(306px, 100vw, 335px);
 }
 
-.floppy {
-  object-fit: cover;
-  object-position: center;
+.floppy-icon {
+  min-width: 21px;
+  height: 21px;
   mix-blend-mode: difference;
+  z-index: 1;
   color: var(--button-text-color);
-  z-index: 2;
 }
 
 .footer__button {
@@ -370,7 +359,113 @@
   color: var(--akcent-color);
 }
 
-@media (width <= 375px) {
-
+.dialog[open] {
+  padding: 32px 40px;
+  width: clamp(343px, 10%, 359px);
+  display: grid;
+  border: 2px solid var(--akcent-color);
+  background: var(--background-color);
+  color: var(--akcent-color);
 }
 
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog__floppy-text {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: clamp(257px, 50%, 293px);
+  align-items: center;
+  gap: 20px;
+  padding-block-end: 30px;
+}
+
+.dialog__floppy {
+  mix-blend-mode: difference;
+  color: var(--button-text-color);
+  z-index: 1;
+  width: 39px;
+  height: 39px;
+}
+
+.dialog__text {
+  font-family: var(--font-family-akcent);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--normal-font-weight);
+  line-height: 150%;
+  color: var(--akcent-color);
+  text-transform: uppercase;
+}
+
+.dialog__button {
+  background-color: transparent;
+  display: flex;
+  width: clamp(257px, 50%, 293px);
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  line-height: 90%;
+  text-transform: uppercase;
+  justify-self: center;
+  position: relative;
+  padding: 9px 17px;
+  border: 2px solid var(--akcent-color);
+}
+
+.two-card-img {
+  filter: contrast(50%);
+}
+
+.three-card-img {
+  filter: opacity(0.4);
+}
+
+.four-card-img {
+  filter: saturate(140%);
+}
+
+.five-card-img {
+  filter: grayscale(0.9);
+}
+
+.six-card-img {
+  filter: hue-rotate(-100deg);
+}
+
+.seven-card-img {
+  filter: sepia(70%);
+}
+
+.eight-card-img {
+  filter: invert(1) brightness(50%) saturate(66%) hue-rotate(90deg);
+}
+
+@media (width <= 376px) {
+  .header__title {
+    margin-top: 120px;
+  }
+
+  .main__text {
+    padding: 22px 26px;
+  }
+
+  .main__button-card {
+    padding: 5px 26px 26px 0;
+  }
+
+  .footer {
+    margin: 0 auto;
+    padding: 50px 12px 101px;
+  }
+
+  .footer__button {
+    flex-direction: column;
+  }
+
+  .floppy-icon {
+    width: 28px;
+    height: 26px;
+  }
+}
