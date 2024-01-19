@@ -24,7 +24,7 @@
     }
 }
 
-@keyframes scale{
+@keyframes scale {
     form {
         transform: scale(1);
     }

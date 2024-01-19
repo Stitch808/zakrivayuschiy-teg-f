@@ -439,7 +439,7 @@
 }
 
 .eight-card-img {
-  filter: invert(1) brightness(50%) saturate(66%) hue-rotate(90deg);
+  filter: invert(1) brightness(50%) hue-rotate(90deg);
 }
 
 @media (width <= 376px) {

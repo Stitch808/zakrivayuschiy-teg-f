@@ -52,11 +52,10 @@
 @media (prefers-color-scheme: light) {
     :root {
         --akcent-color: #000;
-        --background-color: #FFF; 
+        --background-color: #FFF;
         --text-stroke-color: #FFF;
         --button-text-color: #FFF;
         --sparks-color: red;
-        --font-weight-main-card: 400;
         --title-font-weight: 700;
         --font-weight: 400;
         --normal-font-weight: 400;
