@@ -414,6 +414,10 @@
   border: 2px solid var(--akcent-color);
 }
 
+.one__card-img {
+  filter: blur(1px);
+}
+
 .two-card-img {
   filter: contrast(50%);
 }
