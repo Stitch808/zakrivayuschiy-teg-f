@@ -24,12 +24,22 @@
     }
 }
 
-@keyframes change-scale {
-    from {
-        transform: scale(0);
+@keyframes scale{
+    form {
+        transform: scale(1);
     }
 
     to {
-        transform: scale(1);
+        transform: scale(1.5);
+    }
+}
+
+@keyframes sparks {
+    form {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

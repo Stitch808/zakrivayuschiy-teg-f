@@ -9,6 +9,8 @@
     --akcent-color: #00CC14;
     --background-color: #000;
     --text-stroke-color: #000;
+    --button-text-color: #00CC14;
+    --sparks-color: red;
     --title-font-weight: 785;
     --font-weight: 465;
     --normal-font-weight: 400;
@@ -22,6 +24,8 @@
         --akcent-color: #00CC14;
         --background-color: #000;
         --text-stroke-color: #000;
+        --button-text-color: #00CC14;
+        --sparks-color: red;
         ---title-font-weight: 785;
         --font-weight: 465;
         --normal-font-weight: 400;
@@ -35,6 +39,8 @@
     --akcent-color: #000;
     --background-color: #FFF;
     --text-stroke-color: #FFF;
+    --button-text-color: #FFF;
+    --sparks-color: red;
     --title-font-weight: 700;
     --font-weight: 400;
     --normal-font-weight: 400;
@@ -48,6 +54,8 @@
         --akcent-color: #000;
         --background-color: #FFF; 
         --text-stroke-color: #FFF;
+        --button-text-color: #FFF;
+        --sparks-color: red;
         --font-weight-main-card: 400;
         --title-font-weight: 700;
         --font-weight: 400;
