@@ -17,8 +17,8 @@
   </head>
   <body class="page">
     <header class="header background">
-      <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <h2 class="header__text">закрывающий тег</h2>
+      <a class="header__title">&lt;/HTML&gt;</a>
+      <h1 class="header__text">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -48,9 +48,9 @@
 
     <main class="main">
       <section class="section background">
-        <h3 class="main__title-card">
+        <h2 class="main__title-card">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        </h2>
 
         <div class="main__card-img">
           <img
@@ -119,9 +119,9 @@
       </section>
 
       <section class="section background">
-        <h3 class="main__title-card">
+        <h2 class="main__title-card">
           1 спринт: Я — чистый лист
-        </h3>
+        </h2>
 
         <div class="main__card-img">
           <img
@@ -191,9 +191,9 @@
       </section>
 
       <section class="section background">
-        <h3 class="main__title-card">
+        <h2 class="main__title-card">
           1 спринт: А если не получится?
-        </h3>
+        </h2>
 
         <div class="main__card-img">
           <img
@@ -262,9 +262,9 @@
       </section>
 
       <section class="section background">
-        <h3 class="main__title-card">
+        <h2 class="main__title-card">
           2 спринт: Погоня за идеалом
-        </h3>
+        </h2>
 
         <div class="main__card-img">
           <img
@@ -333,9 +333,9 @@
       </section>
 
       <section class="section background">
-        <h3 class="main__title-card">
+        <h2 class="main__title-card">
           2 спринт: О тех, кто рядом
-        </h3>
+        </h2>
 
         <div class="main__card-img">
           <img
@@ -404,9 +404,9 @@
       </section>
 
       <section class="section background">
-        <h3 class="main__title-card">
+        <h2 class="main__title-card">
           3 спринт: Обходные стратегии
-        </h3>
+        </h2>
 
         <div class="main__card-img">
           <img
@@ -475,9 +475,9 @@
       </section>
 
       <section class="section background">
-        <h3 class="main__title-card">
+        <h2 class="main__title-card">
           3 спринт: Когда опускаются руки
-        </h3>
+        </h2>
 
         <div class="main__card-img">
           <img
@@ -546,9 +546,9 @@
       </section>
 
       <section class="section background">
-        <h3 class="main__title-card">
+        <h2 class="main__title-card">
           «Сейчас я здесь»
-        </h3>
+        </h2>
 
         <div class="main__card-img">
           <img
@@ -640,13 +640,13 @@
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button
-          class="dialog__button button"
-          type="button"
-          onclick="window['dialog-id'].close()"
-        >
-          <span class="button__text">ок</span>
-        </button>
+        <form method="dialog">
+          <button
+            class="dialog__button button"
+            type="submit">
+            <span class="button__text">ок</span>
+          </button>
+        </form>
       </dialog>
     </footer>
 
