@@ -457,6 +457,11 @@
     padding: 5px 26px 26px 0;
   }
 
+  .label {
+    inset-inline-end: 12px;
+    inset-block-start: 22px;
+  }
+
   .footer {
     margin: 0 auto;
     padding: 50px 12px 101px;
