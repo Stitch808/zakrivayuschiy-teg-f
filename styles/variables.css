@@ -11,7 +11,7 @@
     --text-stroke-color: #000;
     --button-text-color: #FFF;
     --sparks-color: red;
-    --first-background-image: repeating-linear-gradient(#d3d3d3, transparent 2px);
-    --second-background-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px);
+    --first-background-image: repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px);
+    --second-background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px);
     --background-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }

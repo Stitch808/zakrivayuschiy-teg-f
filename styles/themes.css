@@ -14,8 +14,8 @@
     --title-font-weight: 785;
     --font-weight: 465;
     --normal-font-weight: 400;
-    --first-background-image: repeating-linear-gradient(#000, transparent 2px);
-    --second-background-image: repeating-linear-gradient(90deg, #000, transparent 2px);
+    --first-background-image: repeating-linear-gradient(#000 0 2px, transparent 2px 4px);
+    --second-background-image: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px);
     --background-gradient: linear-gradient(#007f0c, #004306);
 }
 
@@ -29,8 +29,8 @@
         --title-font-weight: 785;
         --font-weight: 465;
         --normal-font-weight: 400;
-        --first-background-image: repeating-linear-gradient(#000, transparent 2px);
-        --second-background-image: repeating-linear-gradient(90deg, #000, transparent 2px);
+        --first-background-image: repeating-linear-gradient(#000 0 2px, transparent 2px 4px);
+        --second-background-image: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px);
         --background-gradient: linear-gradient(#007f0c, #004306);
     }
 }
@@ -44,8 +44,8 @@
     --title-font-weight: 700;
     --font-weight: 400;
     --normal-font-weight: 400;
-    --first-background-image: repeating-linear-gradient(#d3d3d3, transparent 2px);
-    --second-background-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px);
+    --first-background-image: repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px);
+    --second-background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px);
     --background-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
 
@@ -59,8 +59,8 @@
         --title-font-weight: 700;
         --font-weight: 400;
         --normal-font-weight: 400;
-        --first-background-image: repeating-linear-gradient(#d3d3d3, transparent 2px);
-        --second-background-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px);
+        --first-background-image: repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px);
+        --second-background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px);
         --background-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     }
 }
