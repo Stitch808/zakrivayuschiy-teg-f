@@ -187,7 +187,10 @@
     0 1px var(--text-stroke-color), 0 -1px var(--text-stroke-color);
 }
 
-@supports ((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) {
+@supports (
+  (text-stroke: 1px var(--text-stroke-color)) or
+    (-webkit-text-stroke: 1px var(--text-stroke-color))
+) {
   .label {
     -webkit-text-stroke: 1px var(--text-stroke-color);
     text-stroke: 1px var(--text-stroke-color);
@@ -366,7 +369,7 @@
   background-color: var(--background-color);
   color: var(--akcent-color);
   font-family: var(--font-family-akcent);
-  font-size: 14px;;
+  font-size: 14px;
   line-height: 150%;
   padding: 31.5px 32.5px 30.5px 31.5px;
   text-transform: uppercase;
@@ -411,7 +414,6 @@
   grid-row: 2 / 3;
   grid-column: 1 / 8;
 }
-
 
 .dialog__button {
   font-family: var(--font-family-akcent);
