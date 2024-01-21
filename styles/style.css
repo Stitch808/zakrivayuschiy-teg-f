@@ -340,6 +340,7 @@
 }
 .footer {
   margin: 54px auto;
+  margin-block-end: 100px;
   max-width: clamp(306px, 100vw, 335px);
 }
 
